@@ -1,0 +1,24 @@
+{
+  "name": "chenqionghe/validator",
+  "description": "validator",
+  "keywords": [
+    "base"
+  ],
+  "authors": [
+    {
+      "name": "chenqionghe",
+      "email": "chenqionghe@sina.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "CQH/utils": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CQH\\Validator\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
