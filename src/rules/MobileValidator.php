@@ -1,14 +1,14 @@
 <?php
 
-namespace CQH\Validator\Rules;
+namespace chenqionghe\Validator\Rules;
 
-use CQH\Validator\Validator;
-use CQH\Validator\Rule;
+use chenqionghe\Validator\Validator;
+use chenqionghe\Validator\Rule;
 
 /**
  * Class MobileValidator
  * @author chenqionghe
- * @package CQH\Validator\Rules
+ * @package chenqionghe\Validator\Rules
  */
 class MobileValidator implements Rule
 {

@@ -6,7 +6,7 @@
 ### 快速使用
 ```
 $data = [
-    'name' => 'CQH',
+    'name' => 'chenqionghe',
     'age' => '十八',
     'email' => 'abc',
     'money' => "abc",
@@ -203,7 +203,7 @@ if (!$val->validate()) {
 ```
 #### json(验证json格式)
 ```
-$data = ['json1' => 'abcdef', 'mobile2' => '{"name":"CQH","age":18}'];
+$data = ['json1' => 'abcdef', 'mobile2' => '{"name":"chenqionghe","age":18}'];
 $val = new Validator($data);
 $val->rules([
     ['json', "json1"],
@@ -240,7 +240,7 @@ if (!$val->validate()) {
 ```
 #### email(验证邮箱)
 ```
-$data = ['email1' => 'abcdef', 'email2' => 'CQH@sina.com'];
+$data = ['email1' => 'abcdef', 'email2' => 'chenqionghe@sina.com'];
 $val = new Validator($data);
 $val->rules([
     ['email', "email1"],
@@ -460,7 +460,7 @@ $data = ['name' => "abc"];
 $val = new Validator($data);
 $val->rules([
     ['func', 'name', 'is_array'],
-    ['func', 'name', [\CQH\Utils\Arrays::class, 'isMultidim']],
+    ['func', 'name', [\chenqionghe\Utils\Arrays::class, 'isMultidim']],
 ]);
 if (!$val->validate()) {
     var_dump($val->errorString());

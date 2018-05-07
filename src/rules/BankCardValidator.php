@@ -1,9 +1,9 @@
 <?php
 
-namespace CQH\Validator\Rules;
+namespace chenqionghe\Validator\Rules;
 
-use CQH\Validator\Validator;
-use CQH\Validator\Rule;
+use chenqionghe\Validator\Validator;
+use chenqionghe\Validator\Rule;
 
 /**
  * Class BankcardValidator

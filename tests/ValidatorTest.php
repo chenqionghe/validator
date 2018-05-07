@@ -1,5 +1,5 @@
 <?php
-use CQH\Validator\Validator;
+use chenqionghe\Validator\Validator;
 use PHPUnit\Framework\TestCase;
 
 
@@ -16,7 +16,7 @@ class ValidatorTest extends TestCase
     public function demo()
     {
         $data = [
-            'name' => 'CQH',
+            'name' => 'chenqionghe',
             'age' => '十八',
             'email' => 'abc',
             'money' => "abc",
@@ -114,7 +114,7 @@ class ValidatorTest extends TestCase
      */
     public function email()
     {
-        $data = ['email1' => 'abcdef', 'email2' => 'CQH@sina.com'];
+        $data = ['email1' => 'abcdef', 'email2' => 'chenqionghe@sina.com'];
         $val = new Validator($data);
         $val->rules([
             ['email', "email1"],
@@ -269,7 +269,7 @@ class ValidatorTest extends TestCase
      */
     public function json()
     {
-        $data = ['json1' => 'abcdef', 'mobile2' => '{"name":"CQH","age":18}'];
+        $data = ['json1' => 'abcdef', 'mobile2' => '{"name":"chenqionghe","age":18}'];
         $val = new Validator($data);
         $val->rules([
             ['json', "json1"],
@@ -513,7 +513,7 @@ class ValidatorTest extends TestCase
         $val = new Validator($data);
         $val->rules([
             ['func', 'name', 'is_array'],
-            ['func', 'name', [\CQH\Utils\Arrays::class, 'isMultidim']],
+            ['func', 'name', [\chenqionghe\Utils\Arrays::class, 'isMultidim']],
         ]);
         $res = $val->validate();
         $this->assertEquals($res, false);

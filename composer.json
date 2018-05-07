@@ -13,11 +13,11 @@
   "license": "MIT",
   "type": "library",
   "require": {
-    "CQH/utils": "*"
+    "chenqionghe/utils": "*"
   },
   "autoload": {
     "psr-4": {
-      "CQH\\Validator\\": "src/"
+      "chenqionghe\\Validator\\": "src/"
     }
   },
   "minimum-stability": "dev"

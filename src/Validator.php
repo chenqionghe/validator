@@ -1,25 +1,25 @@
 <?php
 
-namespace CQH\Validator;
+namespace chenqionghe\Validator;
 
 use DateTime;
 use ArrayAccess;
 use IteratorAggregate;
 use JsonSerializable;
-use CQH\Utils\ArrayTrait;
-use CQH\Utils\Arrays;
-use CQH\Utils\Strings;
-use CQH\Validator\Rules\AlphaValidator;
-use CQH\Validator\Rules\AlphaNumValidator;
-use CQH\Validator\Rules\BankCardValidator;
-use CQH\Validator\Rules\CarPlateValidator;
-use CQH\Validator\Rules\DateValidator;
-use CQH\Validator\Rules\EmailValidator;
-use CQH\Validator\Rules\IpValidator;
-use CQH\Validator\Rules\MobileValidator;
-use CQH\Validator\Rules\SlugValidator;
-use CQH\Validator\Rules\TelValidator;
-use CQH\Validator\Rules\UrlValidator;
+use chenqionghe\Utils\ArrayTrait;
+use chenqionghe\Utils\Arrays;
+use chenqionghe\Utils\Strings;
+use chenqionghe\Validator\Rules\AlphaValidator;
+use chenqionghe\Validator\Rules\AlphaNumValidator;
+use chenqionghe\Validator\Rules\BankCardValidator;
+use chenqionghe\Validator\Rules\CarPlateValidator;
+use chenqionghe\Validator\Rules\DateValidator;
+use chenqionghe\Validator\Rules\EmailValidator;
+use chenqionghe\Validator\Rules\IpValidator;
+use chenqionghe\Validator\Rules\MobileValidator;
+use chenqionghe\Validator\Rules\SlugValidator;
+use chenqionghe\Validator\Rules\TelValidator;
+use chenqionghe\Validator\Rules\UrlValidator;
 use Serializable;
 use Countable;
 
@@ -27,7 +27,7 @@ use Countable;
  * Class Validator
  * @author chenqionghe
  * @property $attributes
- * @package CQH\Validator
+ * @package chenqionghe\Validator
  * */
 class Validator implements ArrayAccess, IteratorAggregate, JsonSerializable, Serializable, Countable
 {

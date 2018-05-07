@@ -1,10 +1,10 @@
 <?php
 
-namespace CQH\Validator;
+namespace chenqionghe\Validator;
 
 /**
  * Interface Rule
- * @package CQH\Validator
+ * @package chenqionghe\Validator
  */
 interface Rule
 {

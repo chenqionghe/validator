@@ -1,14 +1,14 @@
 <?php
 
-namespace CQH\Validator\Rules;
-use CQH\Validator\Validator;
+namespace chenqionghe\Validator\Rules;
+use chenqionghe\Validator\Validator;
 use DateTime;
-use CQH\Validator\Rule;
+use chenqionghe\Validator\Rule;
 
 /**
  * Class DateBeforeValidator
  * @author chenqionghe
- * @package CQH\Validator\Rules
+ * @package chenqionghe\Validator\Rules
  */
 class DateBeforeValidator implements Rule
 {
