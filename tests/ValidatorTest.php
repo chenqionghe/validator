@@ -47,7 +47,7 @@ class ValidatorTest extends TestCase
      * @test
      * 自定义错误消息
      */
-    public function message()
+    public function customerMessage()
     {
         var_dump("自定义错误消息");
         $data = ['name' => '', 'age' => 'a',];
