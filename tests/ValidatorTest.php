@@ -23,6 +23,7 @@ class ValidatorTest extends TestCase
             'address' => 'beijing',
             'sex' => 'man',
             'lang' => 'php',
+            'domain' => 'www.baidu.cc'
         ];
         $validator = new  Validator($data);
         $validator->rules([
@@ -32,6 +33,7 @@ class ValidatorTest extends TestCase
             ['length', 'address', ">=", 20],
             ['in', 'sex', ['男', '女']],
             ['notIn', 'lang', ['php', 'go', 'java']],
+            ['domain','domain']
         ]);
         //验证触发方法
         $res = $validator->validate();

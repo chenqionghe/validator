@@ -62,6 +62,7 @@ Validator::isSlug('123abc_'));
 Validator::isDate('2010'));
 Validator::isMobile('123456'));
 Validator::isTel('123456'));
+Validator::isDomain('www.xxx.com'));
 ```
 
 ### 使用demo1 通过rule或rules添加验证规则
@@ -178,6 +179,7 @@ string '用户名不能为空|年龄只能是整数(0-9)|我的邮箱是无效�
 * numeric      必须是数字
 * ip           必须是IP地址
 * url          必须是URL地址
+* domain       必须是域名
 * tel          验证大陆电话
 * carPlate     验证车牌号
 * bankCard     验证银行卡号

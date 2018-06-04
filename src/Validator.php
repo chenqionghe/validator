@@ -2,6 +2,7 @@
 
 namespace chenqionghe\Validator;
 
+use chenqionghe\Validator\Rules\DomainValidator;
 use DateTime;
 use ArrayAccess;
 use IteratorAggregate;
@@ -559,14 +560,26 @@ class Validator implements ArrayAccess, IteratorAggregate, JsonSerializable, Ser
         return BankCardValidator::validate('', $value, [], self::getInstance());
     }
 
+
     /**
-     * 验证是否是手机号
+     * 检测是否是手机号
+     *
+     * @param $value
+     * @return mixed
+     */
+    public static function isMobile($value)
+    {
+        return MobileValidator::validate('', $value, [], self::getInstance());
+    }
+
+    /**
+     * 验证是否是域名
      *
      * @param $value
      * @return bool
      */
-    public function isMobile($value)
+    public function isDomain($value)
     {
-        return MobileValidator::validate('', $value, [], self::getInstance());
+        return DomainValidator::validate('', $value, [], self::getInstance());
     }
 }
